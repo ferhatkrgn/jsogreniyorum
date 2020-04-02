@@ -1,2 +1,2 @@
-![Lab_No - Gif ](outputs/jsogreniyorum.gif)
+![jsogreniyorum - Gif ](outputs/jsogreniyorum.gif)
  
