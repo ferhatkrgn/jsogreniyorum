@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>WebSitesi Uygulamam</title> 
+<style>
+
+h1{
+	color: red;
+	 text-align: center;
+  background-color:blue;
+}	
+h2{
+	margin: 0;
+	color: red;
+	text-align: center;
+}	
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+h3{
+	padding:10px 16px;
+  color: blue;
+}
+p { 
+    text-indent: 15px; 
+}
+
+</style>
+</head>
+<body>
+<h1>JAVASCRİPT</h1>
+<ul class="menu">
+   <li><a href="./deneme.html">  JavaScript Giriş</a></li>
+  <li><a href="./deneme1.html"> JavaScript Yazılım (Syntax) yapısı</a></li>
+  <li><a href="./deneme2.html">  Değişkenler</a></li>
+  <li><a class="active" href="./deneme3.html"> Operatörler</a></li>
+   <li><a href="./deneme4.html">  Aritmetik</a></li>
+   <li><a href="./deneme5.html">   Veri Tipleri</a></li>
+   <li><a href="./deneme6.html">   Fonksiyon Yapısı</a></li>
+   <li><a href="./deneme7.html">  Olaylar (Events)</a></li>
+   <li><a href="./deneme8.html"> Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+   <li><a href="./deneme9.html"> If koşul yapıları</a></li>
+   <li><a href="./deneme10.html">Döngüler</a></li>
+   <li><a href="./deneme11.html"> Tip Dönüşümleri</a></li>
+   <li><a href="./deneme12.html">Çalışma yapısı ve genel mimarisi</a></li>
+</ul>
+<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+	<h2>Operatörler </h2>
+  <h3>JavaScript'te "ve" Operatörü: "&&"</h3>
+<p>İçiçe deyim kullanmak da güzel bir yol ama daha kısa bir yolumuz var: Mantıksal İşlemler. Sayının hem 25'ten büyük olmasını, hem de 60'tan küçük olmasını istiyorsak ve anlamına gelen && mantıksal işlem işareti ile iki koşulu tek bir koşul ifadesi haline dönüştürebiliriz:</p>
+<p>Buradaki ve kavramını Matematik konusunun mantık (logic) dersinden hatırlıyorsunuzdur. (Matematiği anlamakta zorlananlar programcılığa hiç başlamasınlar.) Özetle ve ifadesinin sorgulama sonuçları şöyleydi:<br>
+Doğru &&  Doğru = Doğru<br>
+Doğru &&  Yanlış  = Yanlış<br>
+Yanlış  &&  Doğru = Yanlış<br>
+Yanlış  &&  Yanlış  = Yanlış<br>
+&& operatörüyle yapılan sorgulamanın onaylanması için, her iki koşulun da sağlanması gerekir. Aksi takdirde sorgulama onaylanmayacaktır.
+</p>
+<h4 style="color: blue">JavaScript'te "veya" Operatörü: "||"</h4>
+<p>Bir başka mantıksal işlem operatörü: || (veya anlamındadır; bu işareti oluşturmak için iki defa ALTGR + "tire" tuşuna basın. "tire" tuşu backspace (geri al) tuşunun solunda bulunur. Eminim matematik bilgilerinden hiç kuşku duymadığım okuyucular bu operatörün sorgulama sistemini hemen hatırlamışlardır ama ben yine de yazayım.<br>
+Doğru ||  Doğru = Doğru<br>
+Doğru ||  Yanlış  = Doğru<br>
+Yanlış  ||  Doğru = Doğru<br>
+Yanlış  ||  Yanlış  = Yanlış<br></p><p>
+|| (veya) operatörünün && (ve) operatöründen farkı görülüyor. Bir sorgulamada || operatörü kullanılmışsa, koşullardan bir tanesinin gerçekleşmesi onay için yeterlidir. Son uygulamamızda 65 sayısını && operatörü ile sorgulamıştık:<br>
+(65 < 60) && (65 > 25) <br></p>
+<p>Bu koşulun ilk kısmı yanlış, ikinci kısmı ise doğruydu. Yanlış && doğru = yanlış olduğundan sorgulama sonucu red fonksiyonuna gönderilmişti. Aynı koşul ifadelerini || operatörü ile sorgulasaydık sonuç başka olacaktı:<br>
+(65 < 60) || (65 > 25) <br></p>
+<p>
+Buradaki işlem: Yanlış || doğru = doğru işlemidir. Ve koşul ifadesi kabul görür. Bu nedenle && ile || ifadelerini ne zaman kullanacağımıza dikkat etmeliyiz. Şimdi || operatörü için başka bir uygulama geliştirelim: Bu uygulamamız öncekiyle aynı sonucu versin. Yanlız bunun için koşul ifadesini ve koşul işlemlerini değiştireceğim, aradaki farka dikkat ediniz.</p>
+
+	
+
+</div>
+
+
+</body>
+</html>

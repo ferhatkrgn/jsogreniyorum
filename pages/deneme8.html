@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>WebSitesi Uygulamam</title> 
+<style>
+
+h1{
+	color: red;
+	 text-align: center;
+  background-color:blue;
+}	
+h2{
+	margin: 0;
+	color: red;
+	text-align: center;
+}	
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+h3{
+padding:10px 16px;
+}
+
+</style>
+</head>
+<body>
+<h1>JAVASCRİPT</h1>
+<ul class="menu">
+   <li><a href="./deneme.html">  JavaScript Giriş</a></li>
+  <li><a href="./deneme1.html"> JavaScript Yazılım (Syntax) yapısı</a></li>
+  <li><a href="./deneme2.html">  Değişkenler</a></li>
+  <li><a href="./deneme3.html"> Operatörler</a></li>
+   <li><a href="./deneme4.html">  Aritmetik</a></li>
+   <li><a href="./deneme5.html">   Veri Tipleri</a></li>
+   <li><a href="./deneme6.html">   Fonksiyon Yapısı</a></li>
+   <li><a href="./deneme7.html">  Olaylar (Events)</a></li>
+   <li><a  class="active" href="./deneme8.html"> Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+   <li><a href="./deneme9.html"> If koşul yapıları</a></li>
+   <li><a href="./deneme10.html">Döngüler</a></li>
+   <li><a href="./deneme11.html"> Tip Dönüşümleri</a></li>
+   <li><a href="./deneme12.html">Çalışma yapısı ve genel mimarisi</a></li>
+</ul>
+<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+	<h2> Stringler, Sayılar, Diziler ve Diziİşlemleri </h2>
+	<p>Diziler programcılığın temel konularından biridir. Bu sayfada öğrenecekleriniz, diğer programlarda da aynen veya benzer şekilde yer almaktadır. Bu sayfayı hemen değişkenlerden sonra anlatmayı düşünüyordum ama daha önce hiçbir yazılım dili bilmeyen arkadaşlara Pencere ve Metin kodları gibi somut derslerin daha öncelikli olduğuna karar verdim. Şimdi diziler konusuna geçebiliriz.</p>
+<h3>Dizi Tanımlama</h3>
+<p>
+Dizileri değişkenler kümesi şeklinde tanımlayabiliriz. Bellekte aynı isim altında saklanan değerleri ifade eder; değerler new Array(...) kodu kullanılarak girilir. Dizilerin iki yazım türü vardır:<br>
+var hafta = new Array("pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar") 
+veya, <br>
+var hafta = new Array(6)<br> 
+hafta[0] = "pazartesi" <br>
+hafta[1] = "salı" <br>
+hafta[2] = "çarşamba" <br>
+hafta[3] = "perşembe" <br>
+hafta[4] = "cuma" <br>
+hafta[5] = "cumartesi"<br> 
+hafta[6] = "pazar" <br>
+Buradaki hafta isimli değişken 7 değerli bir dizidir. İlk değer 0. sırada sayılmaktadır. hafta[0] değişkeninin değeri "pazartesi", hafta[3]'ün değeri "perşembe"'dir. Değişkenlerden tek farkı, aynı ismi taşımaları. Değerleri yazılım boyunca değişebilir, birbirlerine değerlerini aktarabilirler.
+
+</p>
+<h4 style="color: blue;">Çok Boyutlu Diziler</h4>
+<p>Diziler tek boyutlu olmak zorunda değil. Şu ana kadar tek boyutlu dizileri gördük, oysa çok boyutlu diziler kullanmamız gerekebilir. JavaScript'te çok boyutlu dizi yok aslında ama bu bizim için bir engel değil: Tek boyutlu bir dizinin her elemanını yeni bir dizi haline getirip, iki boyutlu dizi haline getirebiliriz:<br>
+var hafta = new Array (6,1) <br>
+for(var i=0; i<=6;i++) hafta[i]= new Array()<br> 
+hafta[0][0] = "pazartesi sabahı" <br>
+hafta[0][1] = "pazartesi akşamı" <br>
+hafta[1][0] = "salı sabahı" <br>
+hafta[1][1] = "salı akşamı" <br>
+hafta[2][0] = "çarşamba sabahı" <br>
+hafta[2][1] = "çarşamba akşamı" <br>
+hafta[3][0] = "perşembe sabahı" <br>
+hafta[3][1] = "perşembe akşamı" <br>
+hafta[4][0] = "cuma sabahı" <br>
+hafta[4][1] = "cuma akşamı" <br>
+hafta[5][0] = "cumartesi sabahı"<br> 
+hafta[5][1] = "cumartesi akşamı" <br>
+hafta[6][0] = "pazar sabahı" <br>
+hafta[6][1] = "pazar akşamı" <br>
+Burada 7 x 2 = 14 tane değer söz konusudur ve iki değer grubunun (haftanın günleri, gün vakti) aralarında bir ilişki vardır. Bu örneğe 7 x 2'li bir matris de diyebiliriz, zira diziler bir matris ifadesidir. Matris bilgisi olmayan arkadaşlarımız kendi kendilerine yaptıkları denemelerle bazı temel bilgileri edinebilirler</p>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>WebSitesi Uygulamam</title> 
+<style>
+
+h1{
+	color: red;
+	 text-align: center;
+  background-color:blue;
+}	
+h2{
+	margin: 0;
+	color: red;
+	text-align: center;
+}	
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+h3{
+	padding:150px 16px;
+}
+
+</style>
+</head>
+<body>
+<h1>JAVASCRİPT</h1>
+<ul class="menu">
+   <li><a  href="./deneme.html">  JavaScript Giriş</a></li>
+  <li><a href="./deneme1.html"> JavaScript Yazılım (Syntax) yapısı</a></li>
+  <li><a href="./deneme2.html">  Değişkenler</a></li>
+  <li><a href="./deneme3.html"> Operatörler</a></li>
+   <li><a href="./deneme4.html">  Aritmetik</a></li>
+   <li><a href="./deneme5.html">   Veri Tipleri</a></li>
+   <li><a href="./deneme6.html">   Fonksiyon Yapısı</a></li>
+   <li><a href="./deneme7.html">  Olaylar (Events)</a></li>
+   <li><a href="./deneme8.html"> Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+   <li><a href="./deneme9.html"> If koşul yapıları</a></li>
+   <li><a href="./deneme10.html">Döngüler</a></li>
+   <li><a href="./deneme11.html"> Tip Dönüşümleri</a></li>
+   <li><a class="active" href="./deneme12.html">Çalışma yapısı ve genel mimarisi</a></li>
+</ul>
+<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+	<h2>Çalışma yapısı ve genel mimarisi </h2>
+	<p>Javascript’in bazı özellikleri oldukça güzelken aynı zamanda bu özellikler o kadar iyi olmayabiliyor. Bir açılış ve kapanış komut dosyası etiketini HTML dosyasının başına eklemek ve tam oraya bir Spaghetti kodu atmak kuşkusuz en basit özelliklerden biridir. Bu çok işe yaramaktadır… Yoksa yaramamakta mıdır?<br>
+
+Spaghetti’nin ne olduğunu merak ediyor olabilirsiniz. Hemen cevaplayalım:<br>
+
+Spaghetti kodu adının verilmesi aslında bu kod yapısının karmaşık ve birbirine dolanmış gibi olmasından kaynaklanmaktadır; bu isim biraz da bu kodu kötülemek için verilmiştir.<br>
+
+Bu kodun sürdürülebilirliği, hata ayıklanabilmesi neredeyse imkansız gibidir ve hatalar oluşmasına oldukça müsaittir. Web tasarımı ve geliştirmesi işi zaten oldukça yorucudur, bu işlerin daha da zor hale gelmesini istemeyiz, öyle değil mi?<br>
+
+Peki, öyleyse bu tarz bir kodu yazmaktan nasıl kurtulabiliriz? Bizce bunun iki adet yöntemi bulunuyor. Elbette bu yöntemlerin sadece bizim fikrimiz olduğunu vurgulamakta yarar var. Bunlardan birincisi hizmetinizin içinde yer alan sayısız Javascript çerçevelerini (framework) kullanmaktır. Diğeri ise, yapı ve kalıplar/desenler şeklinde Javascript kodu yazmayı öğrenmektir.<br>
+
+
+MVP, MCV ve MVVM gibi yaygın kullanılan kalıplar/desenler bu işle uğraşanlara çözümler oluşturma konusunda yardımcı olmaktadır. Bu yazımızda sizler için ağırlıklı olarak MVC kalıbına/desenine yer vereceğiz. (MVC = Model View Controller)<br>
+
+MODEL/Veriler/Veri Katmanı: Burası uygulamanızdaki verilerin depolandığı yerdir. Bu model adı verilen kısım denetleyiciler ve görünüşlerden, daha geniş kapsamdan bilinçli olarak ayrılmıştır. Modelde bir değişiklik olduğu zaman değişimin Event Dispatcher bölümünde meydana geldiğini gösteren gözlemciler bunu bildirecektir.<br>
+
+VIEW/Arayüz/Sunum Katmanı: Burası sizin DOM’a izin veren ve Event Handlers (onmouseover, click vs.) gibi kısımları kurmanızdan sorumlu olan uygulamanızın bir bölümüdür. Bu arayüz kısmı aynı zamanda HTML sunumunuzdan sorumlu olan bölümdür. Kullanıcı giriş alanını kullanarak bir veri girdiği zaman arayüz/view bölümü bir Event Dispatcher kullanacak, bu da denetleyicilere bildirilecek ve denetleyiciler de modeli güncelleyecektir. View mode içinde hızlı bir ayrıştırma yapmayı sağlamaktadır.<br>
+
+Controller/Denetleyici/Uygulama Mantığı: Denetleyici, View ile Model arasındaki tutkal gibidir. Controller, Model veya View içinde meydana gelen olayları işler veya yanıt verir. Kullanıcı View kısmını değiştirdiğinde Modeli günceller ve aynı zamanda Model değiştiği zaman View kısmını günceller. Kullanıcı görev eklemeyi tıkladığı zaman bu tıklama denetleyiciye aktarılır ve bu eklenen görevle denetleyici modeli modifiye eder. Diğer başka karar verici veya mantık durumları bu bölümde performans gösterir (HTML kullanarak yerel depolama, veri tabanına eşzamansız kayıt yapma vs.).<br>
+</p>
+
+</div>
+
+
+</body>
+</html>

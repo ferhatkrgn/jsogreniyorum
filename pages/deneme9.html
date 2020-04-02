@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>WebSitesi Uygulamam</title> 
+<style>
+
+h1{
+	color: red;
+	 text-align: center;
+  background-color:blue;
+}	
+h2{
+	margin: 0;
+	color: red;
+	text-align: center;
+}	
+ul.b {
+  list-style-type: circle;
+   text-decoration: none;
+   position:absolute;
+   overflow: all;
+
+}
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+h3{
+	padding:10px 16px;
+}
+
+</style>
+</head>
+<body>
+<h1>JAVASCRİPT</h1>
+<ul class="menu">
+   <li><a href="./deneme.html">  JavaScript Giriş</a></li>
+  <li><a href="./deneme1.html"> JavaScript Yazılım (Syntax) yapısı</a></li>
+  <li><a href="./deneme2.html">  Değişkenler</a></li>
+  <li><a href="./deneme3.html"> Operatörler</a></li>
+   <li><a href="./deneme4.html">  Aritmetik</a></li>
+   <li><a href="./deneme5.html">   Veri Tipleri</a></li>
+   <li><a href="./deneme6.html">   Fonksiyon Yapısı</a></li>
+   <li><a href="./deneme7.html">  Olaylar (Events)</a></li>
+   <li><a href="./deneme8.html"> Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+   <li><a class="active" href="./deneme9.html"> If koşul yapıları</a></li>
+   <li><a href="./deneme10.html">Döngüler</a></li>
+   <li><a href="./deneme11.html"> Tip Dönüşümleri</a></li>
+   <li><a href="./deneme12.html">Çalışma yapısı ve genel mimarisi</a></li>
+</ul>
+<div style="margin-left:20%;padding:1px 16px;height:1000px;">
+	<h2> If koşul yapıları </h2>
+	<p>İlk koşul deyimimiz: if...else... (Türkçesi: eğer öyleyse...değilse...). Yazılımda veriler değerlendirilirken bir yol ayrımına, elemeye gidilebilir. Mesela belli bir değerin altındakiler için başka işlemler, üstündekiler için başka işlemler yapılabilir. Verileri böyle bir elemeye tabi tutmak için if...else... koşul deyimini kullanabiliriz.Bu deyimin genel yapısı şöyledir:
+</p>
+<pre>if (koşul ifadesi) işlem 
+else işlem 
+birden fazla işlem söz konusuysa, 
+if (koşul ifadesi) 
+{ 
+İŞLEMLER 
+} 
+else 
+{ 
+İŞLEMLER 
+} 
+</pre>
+<h3>Koşul İfadeleri</h3>
+<p>
+Koşul ifadesi parantez içine yazılır. Koşul ifadesi verilerin izleyeceği akışı belirler. Bu koşula uyan verilere koşul ifadesinden sonraki işlemler, bu koşula uymayan verilere ise else ifadesinden sonraki işlemler uygulanır. Koşul ifadelerini belirtirken aşağıdaki işaretlerden yararlanırız:<br>
+==  Eşitlik koşulunu sorgular.<br>
+  degisken == 5<br>
+!=  Eşit olmama koşulunu sorgular.<br>
+  degisken != 5<br>
+> Büyük olma koşulunu sorgular.<br>
+  degisken > 5<br>
+>=  Büyük veya eşit olma koşulunu sorgular.
+  degisken >= 5<br>
+< Küçük olma koşulunu sorgular.
+  degisken < 5<br>
+<=  Küçük veya eşit olma koşulunu sorgular.
+  degisken <= 5<br>
+Koşul deyimleri, koşul ifadesine uyanlara işlem yapar. Uymayanlara ise else kodundan sonraki işlem yapılır. else kodu kullanma zorunluluğu yoktur, kullanılmıyorsa koşul ifadesine uymayanlar, koşul deyimine nasıl girmişlerse öyle çıkarlar.
+
+</p>
+
+</div>
+
+
+</body>
+</html>

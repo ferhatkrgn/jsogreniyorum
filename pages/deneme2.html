@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WebSitesi Uygulamam</title> 
+<style>
+
+h1{
+	color: red;
+	 text-align: center;
+  background-color:blue;
+}	
+h2{
+	margin: 0;
+	color: red;
+	text-align: center;
+}	
+ul.b {
+  list-style-type: circle;
+   text-decoration: none;
+   position:absolute;
+   overflow: all;
+
+}
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+h3{
+	padding:10px 16px;
+  color: blue;
+}
+h4{
+  margin-top: 160px;
+  color: blue;
+  padding: 5px 16px;
+}
+
+</style>
+</head>
+<body>
+<h1>JAVASCRİPT</h1>
+<ul class="menu">
+  <li><a  href="./deneme.html">  JavaScript Giriş</a></li>
+  <li><a href="./deneme1.html"> JavaScript Yazılım (Syntax) yapısı</a></li>
+  <li><a class="active" href="./deneme2.html">  Değişkenler</a></li>
+  <li><a href="./deneme3.html"> Operatörler</a></li>
+   <li><a href="./deneme4.html">  Aritmetik</a></li>
+   <li><a href="./deneme5.html">   Veri Tipleri</a></li>
+   <li><a href="./deneme6.html">   Fonksiyon Yapısı</a></li>
+   <li><a href="./deneme7.html">  Olaylar (Events)</a></li>
+   <li><a href="./deneme8.html"> Stringler, Sayılar, Diziler ve Diziİşlemleri</a></li>
+   <li><a href="./deneme9.html"> If koşul yapıları</a></li>
+   <li><a href="./deneme10.html">Döngüler</a></li>
+   <li><a href="./deneme11.html"> Tip Dönüşümleri</a></li>
+   <li><a href="./deneme12.html">Çalışma yapısı ve genel mimarisi</a></li>
+</ul>
+<div style="margin-left:20%;padding:1px 16px;">
+	<h2>Değişkenler </h2>
+	<p>Değişken, içinde değerler saklayabileceğiniz bir programlama aracıdır. Değişkenlerin sakladığı değer kod sayfaları boyunca değişebilir, birbirine aktarılabilir. Değişkene başka bir değer atayabilirsiniz veya değişkenin sakladığı değeri program içinde kullanabilirsiniz. Değişkenler genellikle programın başlangıcında isimlendirir; böylece bu isimlerle değişkeni çağırabilir, değişkenin taşıdığı değeri kullanabilirsiniz. Not: Değişkenin ismi program boyunca değişmez, ancak taşıdığı değer değişebilir.
+</p>
+<h3>Değişken İsimleri</h3>
+ <p>Değişkenleri isimlendirirken dikkat etmemiz gereken bazı kurallar vardır:</p>
+ <ul class="b">
+  <li>Değişken ismi harf, rakam veya "_" (altçizgi) karakterlerinden oluşabilir. </li>
+  <li>Değişken isminin ilk karakteri bir harf veya "_" (alt çizgi) işareti olmalıdır. </li> 
+  <li>JavaScript küçük harf, büyük harf ayrımı yapar. Mesela değişken isminiz<strong> DIAZ</strong> ise, bu değişkeni hep böyle büyük harflerle yazmak zorundasınız. diaz yazarsanız, gözatıcı bunu farklı bir değişken olarak okur.</li> 
+<li>Değişken isimlerinin uzunluğu 255 karakter kadar olabilir.</li> 
+  <li>Değişken isimleri içinde diğer semboller (+, -, /, boşluk, vb.) yer alamaz.</li> 
+<li>Değişken isimlerinde İngilizce'de olmayan karakterleri (ş, ç, ö, vb.) kullanmayınız. (Genellikle yeni kullanıcılar bu kuralı her zaman anımsamıyorlar</li>.
+  </ul>
+  <h4>Değişkenlere Değer Verme</h4>
+  <p>Değişkenlere değer verirken, değişken her zaman sol tarafta yer alır. Mesela sayi değişkenine 15 değerini vereceksek, şöyle yazarız:
+
+sayi= 15 
+Değişkenler birbirinin değerini de alabilir. Her zaman sola yazılan ifade, sağdaki değeri alır. Örneğin şu iki değişkene bakalım:
+sayı1= 5 
+sayı2= 10 
+sayı1= sayı2 
+Burada sayi1 ve sayi2 isimli iki değişken söz konusu. Önce sayi1 isimli değişkene 5 değeri veriliyor. Sonra sayi2 değişkenine 10 değeri veriliyor. Sonra sayi1 değişkenine sayi2'nin değeri verilerek, sayi1'in değeri değiştiriliyor. Böylece sayi1= 10, sayi2= 10 oluyor. Eğer sayi2 = sayi1 ifadesi olsaydı (sayi2 solda yeralsaydı), sayi1'in değeri sayi2'ye verilmiş olacaktı. Bu durumda sonuç değişik olurdu: sayi1= 5, sayi2= 5
+</p>
+</div>
+</body>
+</html>
